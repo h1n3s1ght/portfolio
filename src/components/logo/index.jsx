@@ -1,31 +1,21 @@
 import React from "react";
-import styled from "styled-components";
-import BHLogo from "../../assets/logo/initials_white_logo_transparent_background.png"
+import styled, { css } from "styled-components";
+import BHLogo from "../../assets/logo/initials_logo_primary.png"
 import { theme } from "../../theme";
 
 const LogoContainer = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 `;
 
 const LogoImg = styled.img`
-    width: 8em;
-    height: 8em;
-`;
-
-const LogoText = styled.div`
-    margin-top: 6px;
-    font-size: 40px;
-    color: ${theme.primary};
+    width: 12%;
+    height: 12%;
 `;
 
 export function Logo(props) {
-    return (<LogoContainer>
-
+    return (
+    <LogoContainer>
         <LogoImg src={BHLogo} />
-
-        {/* Leave "LogoText" Empty for no text */}
-        <LogoText></LogoText>
-
     </LogoContainer>)
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import FullLogo from "../../assets/logo/white_logo_transparent_background.png"
+import FullLogo from "../../assets/logo/gold_logo_transparent_background.png"
 import { theme } from "../../theme";
 
 const LogoContainer = styled.div`
