@@ -4,13 +4,14 @@ import BHLogo from "../../assets/logo/initials_logo_primary.png"
 import { theme } from "../../theme";
 
 const LogoContainer = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: row;
 `;
 
 const LogoImg = styled.img`
-    width: 12%;
-    height: 12%;
+    width: 35%;
+    height: 35%;
 `;
 
 export function Logo(props) {

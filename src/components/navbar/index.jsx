@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ContactBtn } from "../button/contact";
 import { Logo } from "../logo";
+import { NavLinks } from "./navlinks";
 
 const NavCont = styled.div`
     width: 100%;
@@ -14,17 +15,13 @@ const NavCont = styled.div`
 `;
 
 const LogoCont = styled.div`
+    width: 45%;
     margin-top: .75%;
     margin-left: .75%;
 `;
 
-const AccessCont = styled.div`
-
-`;
-
 const Links = styled.div`
-    display: flex;
-    flex-direction: row;
+    width: 55%;
 `;
 
 export function Navbar(props) {
@@ -33,11 +30,8 @@ export function Navbar(props) {
             <LogoCont>
                 <Logo inline/>
             </LogoCont>
-            <AccessCont>
-                <ContactBtn small>Contact</ContactBtn>
-            </AccessCont>
             <Links>
-                
+                <NavLinks/>
             </Links>
         </NavCont>
     );
