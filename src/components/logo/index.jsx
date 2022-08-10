@@ -1,0 +1,31 @@
+import React from "react";
+import styled from "styled-components";
+import BHLogo from "../../assets/logo/initials_white_logo_transparent_background.png"
+import { theme } from "../../theme";
+
+const LogoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const LogoImg = styled.img`
+    width: 8em;
+    height: 8em;
+`;
+
+const LogoText = styled.div`
+    margin-top: 6px;
+    font-size: 40px;
+    color: ${theme.primary};
+`;
+
+export function Logo(props) {
+    return (<LogoContainer>
+
+        <LogoImg src={BHLogo} />
+
+        {/* Leave "LogoText" Empty for no text */}
+        <LogoText></LogoText>
+
+    </LogoContainer>)
+}
