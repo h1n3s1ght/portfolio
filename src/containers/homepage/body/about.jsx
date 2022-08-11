@@ -14,7 +14,6 @@ const AboutCont = styled(Element)`
     flex-direction: column;
     align-content: center;
     padding: 10px 0;
-    background-color: 
 `;
 
 
@@ -22,6 +21,9 @@ export function About(props) {
 
     return (
         <AboutCont name="About">
+
+            <Marginer direction="vertical" margin="4em"/>
+
             <PageTitle> Hi, friend! </PageTitle>
 
             <Marginer direction="vertical" margin="6em"/>
@@ -32,7 +34,7 @@ export function About(props) {
 
             <BodyBlock isRev title="My Passions" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." imgUrl={AboutImg2} />
 
-            <Marginer direction="vertical" margin="15em"/>
+            <Marginer direction="vertical" margin="9em"/>
         </AboutCont>
     );
 }

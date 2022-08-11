@@ -30,7 +30,7 @@ export function NavLinks(){
             <NavLi>Portfolio</NavLi>
             <NavLi>Qualifications</NavLi>
             <NavLi>Resume</NavLi>
-            <NavLi>Connect</NavLi>
+            <NavLi>Contact</NavLi>
         </NavCont>
     );
 };

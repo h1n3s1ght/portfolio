@@ -35,7 +35,7 @@ const BlockTitle = styled.h3`
     // width: 75%;
     text-align: center;
     color: ${theme.primary};
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     margin: 1em 0;
     text-shadow: 2px 2px 6px rgba(0,0,0,.85),
@@ -44,7 +44,7 @@ const BlockTitle = styled.h3`
 
 const Details = styled.p`
     color: black;
-    font-size: 1.2em;
+    font-size: 1.45em;
     text-align: left;
     word-spacing: 4px;
 `;
