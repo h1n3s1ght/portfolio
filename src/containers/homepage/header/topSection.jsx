@@ -22,7 +22,6 @@ const TopContainer = styled.div`
     padding: 0;
     background-image: url(${BackgroundImg});
     background-size: cover;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px 0px, rgba(0, 0, 0, 0.3) 0px 8px 16px 0px;
 `;
 
 const BackgroundFilter = styled.div`
@@ -33,18 +32,6 @@ const BackgroundFilter = styled.div`
     flex-direction: column;
     align-items: center;
 `;
-
-// const DownArrowCont = styled.div`
-//     width: 10%;
-//     height: 5%;
-//     position: absolute;
-//     bottom: 1%;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// `;
 
 export function TopSection(props){
 

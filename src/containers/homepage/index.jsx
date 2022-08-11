@@ -1,7 +1,8 @@
 import React from "react";  
 import styled from "styled-components";
-import { About } from "./body/about";
+import { MainBody } from "./body/mainBody";
 import { TopSection } from "./header/topSection";
+import { Footer } from "./footer/footer";
 
 const PageContainer = styled.div`
     width: 100%;
@@ -16,7 +17,8 @@ export function Homepage(props){
     return (
         <PageContainer>
             <TopSection/>
-            <About/>
+            <MainBody/>
+            <Footer/>
         </PageContainer>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Content(props) {
+export function Contact(props) {
     return (
         <>
         
