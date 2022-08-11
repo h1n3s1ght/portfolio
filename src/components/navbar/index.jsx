@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ContactBtn } from "../button/contact";
 import { Logo } from "../logo";
 import { NavLinks } from "./navlinks";
+import { useState } from "react";
 
 const NavCont = styled.div`
     width: 100%;
@@ -25,8 +25,15 @@ const Links = styled.div`
 `;
 
 export function Navbar(props) {
+
+    const [isSticky, setIsSticky] = useState(false);
+
+    const handleEvent = e => {
+        setIsSticky(current => !current)
+    }
+
     return (
-        <NavCont>
+        <NavCont className={isSticky ? "sticky-nav" : ''} onLoad={handleEvent}>
             <LogoCont>
                 <Logo inline/>
             </LogoCont>
