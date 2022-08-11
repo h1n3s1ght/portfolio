@@ -5,7 +5,7 @@ import { NavLinks } from "./navlinks";
 
 const NavCont = styled.div`
     width: 100%;
-    height: 7%;
+    max-height: 7%;
     margin-top: 0%;
     padding: 0 1em;
     display: flex;
