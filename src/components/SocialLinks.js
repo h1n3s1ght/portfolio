@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
+import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 const SocialLinks = (props) => {
     return (
-        <div className="SocialLinksPage">
-            
-        </div>
+        <>
+            <MDBBtn className='m-1' style={{ backgroundColor: '#3b5998' }} href='#'>
+        <MDBIcon fab icon='facebook-f' />
+      </MDBBtn>
+        </>
     );
 };
 

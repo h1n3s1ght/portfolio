@@ -6,11 +6,14 @@ import { PageTitle } from "../../../components/pageTitle";
 import AboutImg1 from "../../../assets/images/headshot2.jpeg"
 import AboutImg2 from "../../../assets/images/Meredith2.jpeg"
 import { BodyBlock } from "../../../components/bodyBlock";
+import { theme } from "../../../theme";
+
 
 
 const AboutCont = styled(Element)`
     width: 100%;
     display: flex;
+    background-image: linear-gradient(180deg, ${theme.secondary}, rgba(255,255,255,.8));
     flex-direction: column;
     align-content: center;
     padding: 10px 0;

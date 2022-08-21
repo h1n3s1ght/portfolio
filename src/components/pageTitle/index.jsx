@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme";
 
@@ -12,4 +11,3 @@ export const PageTitle = styled.h1`
     text-shadow: 2px 2px 6px rgba(0,0,0,.85),
                  0px -5px 35px rgba(255,255,255,.85);
 `;
-    

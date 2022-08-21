@@ -6,6 +6,7 @@ const BlockCont = styled.div`
     margin-left: 6%; 
     width: 86%;
     display: flex;
+    background-color: rgba(255,255,255, .8);
     flex-direction: ${({ isRev }) => isRev && "row-reverse"};
     justify-content: flex-end;
     align-items: center;
