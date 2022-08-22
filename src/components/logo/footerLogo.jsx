@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import BHLogo from "../../assets/logo/initials_logo_primary.png"
+import BHLogo from "../../assets/logo/footer_logo_fullname.png"
 
 const LogoContainer = styled.div`
     width: 100%;
     display: flex;
+    margin-right: 5%;
     flex-direction: row;
 `;
 
 const LogoImg = styled.img`
-    width: 35%;
-    height: 35%;
+    width: 90%;
 `;
 
-export function Logo(props) {
+export function FooterLogo(props) {
     return (
     <LogoContainer>
         <LogoImg src={BHLogo} />

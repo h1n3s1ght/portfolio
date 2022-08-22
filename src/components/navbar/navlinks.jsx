@@ -28,7 +28,7 @@ export function NavLinks(){
         <NavCont>
             <NavLi>About</NavLi>
             <NavLi>Portfolio</NavLi>
-            <NavLi>Qualifications</NavLi>
+            {/* <NavLi>Qualifications</NavLi> */}
             <NavLi>Resume</NavLi>
             <NavLi>Contact</NavLi>
         </NavCont>

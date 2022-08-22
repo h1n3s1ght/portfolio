@@ -67,10 +67,6 @@
   /* background-color: rgba(6,22,40,.98) !important; */
 }
 
-/* .sticky-nav li {
-  color: white !important;
-} */
-
-/* .sticky-nav li:hover {
-  /* color: white !important; */
-  /* background-color: rgba(255,255,255,.1) !important; */
+.m-1:hover {
+  color: rgba(255,255,255,.45) !important;
+}

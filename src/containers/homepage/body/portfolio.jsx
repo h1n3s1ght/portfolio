@@ -24,9 +24,12 @@ const PortCont = styled(Element)`
   justify-content: center;
 `;
 
-const StyCarProv = styled(CarouselProvider)``;
+const StyCarProv = styled(CarouselProvider)`
+  min-height: 75vh;
+`;
 
 const StySli = styled(Slide)`
+  min-height: 80vh;
   width: 78%;
 `;
 

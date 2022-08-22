@@ -28,6 +28,7 @@ const BlockTitle = styled.h3`
 `;
 
 const BlockDescCont =styled.div`
+    font-family: 'League Spartan', sans-serif;
     width: 80%;
     margin-left: 10%;
     position: flex;
@@ -48,6 +49,16 @@ const BlockDescH5 = styled.h5`
 const BlockDescLink = styled.a`
     text-decoration: none;
     color: ${theme.primary};
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500;
+    letter-spacing: .25em;
+
+    &:hover {
+        background-color: ${theme.primary};
+        color: white;
+        padding: 1% .2%;
+        border-radius: 5px;
+    }
 `;
 
 const BlockImgCont = styled.div`
