@@ -5,4 +5,5 @@ export const theme = {
     secondary: "rgba(6,22,40,.98)",
     secondary_light: "rgba(6,22,40,.55)",
     secondary_trans: "rgba(6,22,40,.3)",
+    secondary_dimmed: "rgba(6,22,40,.75)",
 };

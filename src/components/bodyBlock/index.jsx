@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { theme } from "../../theme"
 
 const BlockCont = styled.div`
-    margin-left: 6%; 
-    width: 86%;
+    margin-left: 11%;
+    min-height: 50vh; 
+    width: 78%;
     display: flex;
     background-color: rgba(255,255,255, .8);
     flex-direction: ${({ isRev }) => isRev && "row-reverse"};
@@ -16,18 +17,20 @@ const BlockCont = styled.div`
 `;
 
 const BlockImg = styled.img`
-    width: 22em;
+    width: 25em;
     height: 23em;
-    border-radius: 5px;
-    margin: 1%;
+    border-radius: 10px;
+    border: .5px solid ${theme.secondary};
+    margin: 1% 3%;
     align-content: right;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 `;
 
 const DescCont = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 70%;
-    min-width: 60%;
+    max-width: 65%;
+    min-width: 55%;
     align-items: center;
     margin: 3%;
 `;

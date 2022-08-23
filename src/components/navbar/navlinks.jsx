@@ -1,6 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme";
+import { scroller } from "react-scroll";
+import { useState } from "react";
+import ContactModal from "../../components/modal/contactModal.jsx";
+
+import Resume from "../../assets/resume/BenHines_Resume_Jul2022.pdf"
 
 const NavCont = styled.ul`
     width: 100%;
@@ -23,14 +28,39 @@ const NavLi = styled.li`
     }
 `;
 
+const ResumeLink = styled.a`
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    color: ${theme.primary};
+`;
+
+const scrollToAbout = () => {
+    scroller.scrollTo("About", { smooth: true, duration: 1500})
+}
+
+const scrollToPort = () => {
+    scroller.scrollTo("Portfolio", { smooth: true, duration: 1500})
+}
+
+
 export function NavLinks(){
+
+const [openModal, setOpenModal] = useState(false);
+
     return (
         <NavCont>
-            <NavLi>About</NavLi>
-            <NavLi>Portfolio</NavLi>
+            <NavLi onClick={scrollToAbout}>About</NavLi>
+            <NavLi onClick={scrollToPort}>Portfolio</NavLi>
             {/* <NavLi>Qualifications</NavLi> */}
-            <NavLi>Resume</NavLi>
-            <NavLi>Contact</NavLi>
+            <NavLi> 
+                <ResumeLink  href={Resume} download> 
+                Resume 
+                </ResumeLink>
+            </NavLi>
+            <NavLi className="openModalBtn" onClick={() => {
+                setOpenModal(true);
+            }} > Contact</NavLi>
+            { openModal && <ContactModal closeModal={setOpenModal}/>}
         </NavCont>
     );
 };

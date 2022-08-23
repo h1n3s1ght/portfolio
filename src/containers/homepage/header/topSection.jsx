@@ -8,6 +8,8 @@ import { DownArrow } from "../../../components/arrow/downArrow";
 import { Navbar } from "../../../components/navbar";
 import { DownArrowCont } from "../../../components/arrow/downArrowCont";
 import { Element, scroller } from "react-scroll";
+import { useState } from "react";
+import ContactModal from "../../../components/modal/contactModal.jsx";
 
 
 //=== If Initials Are Needed ===
@@ -16,7 +18,7 @@ import { Element, scroller } from "react-scroll";
 //==============================
 
 
-const TopContainer = styled.div`
+const TopContainer = styled(Element)`
     width: 100%;
     min-height: 105vh;
     padding: 0;
@@ -35,6 +37,8 @@ const BackgroundFilter = styled.div`
 
 export function TopSection(props){
 
+const [openModal, setOpenModal] = useState(false);
+
     // Write function for scrolling
     //=============================
 
@@ -50,10 +54,13 @@ export function TopSection(props){
                 <Marginer direction="vertical" margin="20em"/>
                 <FullName/>
                 <Marginer direction="vertical" margin="2em"/>
-                <ContactBtn> Contact Me</ContactBtn>
+                <ContactBtn className="openModalBtn" onClick={() => {
+                setOpenModal(true);
+            }}> Contact Me</ContactBtn>
                 <DownArrowCont onClick={scrollToNextPage}>
                     <DownArrow/>
                 </DownArrowCont>
+                { openModal && <ContactModal closeModal={setOpenModal}/>}
             </BackgroundFilter>
         </TopContainer>
     </Element>

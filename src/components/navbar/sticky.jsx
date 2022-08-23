@@ -5,8 +5,6 @@ import { NavLinks } from "./navlinks";
 
 const NavCont = styled.div`
     width: 100%;
-    // min-height: 7%;
-    // max-height: 9.5%;
     margin-top: 0%;
     padding: 0 1em;
     display: flex;
@@ -15,7 +13,7 @@ const NavCont = styled.div`
     align-items: center;
     background-color: rgba(255,255,255,.075);
     // background-image: linear-gradient(180deg, rgba(6,22,40,.98), rgba(6,22,40,.02));
-    z-index: 1100;
+    z-index: 1001;
 `;
 
 //rgba(255,255,255,.5)
