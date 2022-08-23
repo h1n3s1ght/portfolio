@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { theme } from "../../theme";
 import { scroller } from "react-scroll";
 import { useState } from "react";
-import ContactModal from "../../components/modal/contactModal.jsx";
+import { ContactModal, ContactModalTab } from "../../components/modal/contactModal.jsx";
 
 import Resume from "../../assets/resume/BenHines_Resume_Jul2022.pdf"
 
@@ -43,6 +43,10 @@ const scrollToPort = () => {
 }
 
 
+//==============================================
+//====  Use to render Desktop Formatting  ======
+//==============================================
+
 export function NavLinks(){
 
 const [openModal, setOpenModal] = useState(false);
@@ -61,6 +65,33 @@ const [openModal, setOpenModal] = useState(false);
                 setOpenModal(true);
             }} > Contact</NavLi>
             { openModal && <ContactModal closeModal={setOpenModal}/>}
+        </NavCont>
+    );
+};
+
+
+//==============================================
+//====  Use to render Desktop Formatting  ======
+//==============================================
+
+export function NavLinksTab(){
+
+const [openModal, setOpenModal] = useState(false);
+
+    return (
+        <NavCont>
+            <NavLi onClick={scrollToAbout}>About</NavLi>
+            <NavLi onClick={scrollToPort}>Portfolio</NavLi>
+            {/* <NavLi>Qualifications</NavLi> */}
+            <NavLi> 
+                <ResumeLink  href={Resume} download> 
+                Resume 
+                </ResumeLink>
+            </NavLi>
+            <NavLi className="openModalBtn" onClick={() => {
+                setOpenModal(true);
+            }} > Contact</NavLi>
+            { openModal && <ContactModalTab closeModal={setOpenModal}/>}
         </NavCont>
     );
 };

@@ -6,13 +6,14 @@ import { theme } from "../../../theme";
 
 const FooterCont = styled.div`
     width: 100vw;
-    min-height: 18vh;
+    min-height: 24vh;
     background-color: ${theme.secondary};
     bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding:1%;
 `;
 
 const Copyright = styled.h5`

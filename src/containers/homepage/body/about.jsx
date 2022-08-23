@@ -31,9 +31,10 @@ export function About(props) {
 
             <Marginer direction="vertical" margin="6em"/>
 
-            <BodyBlock title="Professional Bio" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." imgUrl={AboutImg1} />
+            <BodyBlock style="white-space: pre-line" title="Professional Bio" description='In my early career, I combined forces with and evolved a start-up called Fanvester. In this entreprenuerial venture, I realized success in business was dependent on technology.  This realization was the motivation that sparked an educational journey focused around this essential aspect of future business.' 
+             imgUrl={AboutImg1} />
 
-            <Marginer direction="vertical" margin="15em"/>
+            <Marginer direction="vertical" margin="12em"/>
 
             <BodyBlock isRev title="My Passions" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." imgUrl={AboutImg2} />
 
@@ -41,3 +42,6 @@ export function About(props) {
         </AboutCont>
     );
 }
+
+
+// description={`${ProBioP1}  ${ProBioP2} ${ProBioP3}`}

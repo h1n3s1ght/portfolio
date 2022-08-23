@@ -20,6 +20,20 @@ const BtnWrap = styled.button`
     }
 `;
 
+
+//==============================================
+//====  Use to render Desktop Formatting  ======
+//==============================================
+
 export function ContactBtn(props) {
+    return <BtnWrap {...props}> { props.children } </BtnWrap>
+}
+
+
+//==============================================
+//====  Use to render Tablet Formatting  =======
+//==============================================
+
+export function ContactBtnTab(props) {
     return <BtnWrap {...props}> { props.children } </BtnWrap>
 }

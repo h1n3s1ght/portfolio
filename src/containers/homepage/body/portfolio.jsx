@@ -38,7 +38,7 @@ const StyDot = styled(DotGroup)`
   justify-content: center;
 
   button {
-    z-index: 1005;
+    // z-index: 1000;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -66,7 +66,7 @@ export function Portfolio(props) {
 
       <StyCarProv
         naturalSlideWidth={100}
-        naturalSlideHeight={50}
+        naturalSlideHeight={56}
         totalSlides={3}
         visibleSlides={1}
       >

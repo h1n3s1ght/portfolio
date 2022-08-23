@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { Logo } from "../logo";
-import { NavLinks } from "./navlinks";
+import { Logo, LogoTab } from "../logo";
+import { NavLinks, NavLinksTab } from "./navlinks";
+
+
+//==============================================
+//====  Styles used in all Size Formatting  ====
+//==============================================
 
 const NavCont = styled.div`
     width: 100%;
@@ -19,9 +24,14 @@ const LogoCont = styled.div`
     margin-left: .75%;
 `;
 
+
 const Links = styled.div`
     width: 55%;
 `;
+
+//==============================================
+//====  Use to render Desktop Formatting  ======
+//==============================================
 
 export function Navbar(props) {
     return (
@@ -32,6 +42,30 @@ export function Navbar(props) {
             <Links>
                 <NavLinks/>
             </Links>
+        </NavCont>
+    );
+};
+
+
+//==============================================
+//====  Use to render Tablet Formatting  =======
+//==============================================
+
+const LinksTab = styled.div`
+    padding-right: 2%;
+    padding-top: 1%;
+    width: 53%;
+`;
+
+export function NavbarTab(props) {
+    return (
+        <NavCont>
+            <LogoCont>
+                <LogoTab inline/>
+            </LogoCont>
+            <LinksTab>
+                <NavLinksTab/>
+            </LinksTab>
         </NavCont>
     );
 };
