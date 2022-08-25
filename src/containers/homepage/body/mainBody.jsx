@@ -1,9 +1,9 @@
 import React from "react";
 import { Element } from "react-scroll";
 import styled from "styled-components";
-import { StickyNavbar } from "../../../components/navbar/sticky";
-import { About } from "./about";
-import { Portfolio } from "./portfolio";
+import { StickyNavbar, StickyNavbarTab } from "../../../components/navbar/sticky";
+import { About, AboutTab } from "./about";
+import { Portfolio, PortfolioTab } from "./portfolio";
 import { Qualifications } from "./quals";
 
 const BodyCont = styled(Element)``;
@@ -32,9 +32,9 @@ export function MainBody(prop){
 export function MainBodyTab(prop){
     return (
         <BodyCont>
-            <StickyNavbar/>
-            <About/>
-            <Portfolio/>
+            <StickyNavbarTab/>
+            <AboutTab/>
+            <PortfolioTab/>
             <Qualifications/>
         </BodyCont>
     );
@@ -48,9 +48,9 @@ export function MainBodyTab(prop){
 export function MainBodyMob(prop){
     return (
         <BodyCont>
-            <StickyNavbar/>
-            <About/>
-            <Portfolio/>
+            <StickyNavbarTab/>
+            <AboutTab/>
+            <PortfolioTab/>
             <Qualifications/>
         </BodyCont>
     );

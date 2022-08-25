@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../logo";
-import { NavLinks } from "./navlinks";
+import { NavLinks, NavLinksTab } from "./navlinks";
 
 const NavCont = styled.div`
     width: 100%;
@@ -30,6 +30,10 @@ const Links = styled.div`
     margin-top: 7.75%;
 `;
 
+//==============================================
+//====  Use to render Desktop Formatting  ======
+//==============================================
+
 export function StickyNavbar(props) {
     return (
         <NavCont className="sticky-nav">
@@ -38,6 +42,23 @@ export function StickyNavbar(props) {
             </LogoCont>
             <Links>
                 <NavLinks/>
+            </Links>
+        </NavCont>
+    );
+};
+
+//==============================================
+//====  Use to render Tablet Formatting  =======
+//==============================================
+
+export function StickyNavbarTab(props) {
+    return (
+        <NavCont className="sticky-nav">
+            <LogoCont>
+                <Logo inline/>
+            </LogoCont>
+            <Links>
+                <NavLinksTab/>
             </Links>
         </NavCont>
     );

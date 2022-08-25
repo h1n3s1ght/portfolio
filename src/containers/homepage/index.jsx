@@ -50,14 +50,15 @@ const Tablet = (
     <PageContainer>
         <TopSectionTab/>
         <MainBodyTab/>
-        {/* <FooterTab/> */}
+        <FooterTab/>
     </PageContainer>
 );
 
 const Mobile = (
     <PageContainer>
-        <MainBody />
-        <Footer />
+        <TopSectionTab/>
+        <MainBodyTab/>
+        <FooterTab/>
     </PageContainer>
 )
 
