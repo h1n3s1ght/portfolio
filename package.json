@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "homepage": "https://www.benjaminisaachines.com",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
