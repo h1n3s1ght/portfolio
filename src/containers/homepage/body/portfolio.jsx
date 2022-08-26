@@ -86,13 +86,13 @@ export function Portfolio(props) {
             />
           </StySli>
           <StySli index={1}>
-            <PortCard title="What To Eat" description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            <PortCard title="What To Eat" description=''
             imgUrl={WhatToEat}
             link="https://what-to-eat-api-site.herokuapp.com/recipes"
             />
           </StySli>
           <StySli index={2}>
-            <PortCard title="Plan It Travel" description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            <PortCard title="Plan It Travel" description=''
             imgUrl={PlanIt} 
             link='https://planit-t.herokuapp.com/'/>
           </StySli>
@@ -132,13 +132,13 @@ export function PortfolioTab(props) {
             />
           </StySli>
           <StySli index={1}>
-            <PortCardTab title="What To Eat" description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            <PortCardTab title="What To Eat" description=''
             imgUrl={WhatToEat}
             link="https://what-to-eat-api-site.herokuapp.com/recipes"
             />
           </StySli>
           <StySli index={2}>
-            <PortCardTab title="Plan It Travel" description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            <PortCardTab title="Plan It Travel" description=''
             imgUrl={PlanIt} 
             link='https://planit-t.herokuapp.com/'/>
           </StySli>
