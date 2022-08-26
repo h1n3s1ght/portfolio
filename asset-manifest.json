@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.71d0b764.css",
+    "main.js": "/portfolio/static/js/main.72bf62b5.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/background.gif": "/portfolio/static/media/background.328de3c83be3c66c5238.gif",
+    "static/media/Meredith2.jpeg": "/portfolio/static/media/Meredith2.1fbad3cba6dd2728232d.jpeg",
+    "static/media/Snowball_debt.png": "/portfolio/static/media/Snowball_debt.a716cc3ed0296db5caf5.png",
+    "static/media/headshot2.jpeg": "/portfolio/static/media/headshot2.dbb70ac6c7ac9486a142.jpeg",
+    "static/media/Plan_it.jpeg": "/portfolio/static/media/Plan_it.54ee7c1950cfcb0303bd.jpeg",
+    "static/media/gold_logo_transparent_background.png": "/portfolio/static/media/gold_logo_transparent_background.f14ea4b2089e41cd102c.png",
+    "static/media/initials_logo_primary.png": "/portfolio/static/media/initials_logo_primary.071f8247c230f9516639.png",
+    "static/media/What_to_eat.jpeg": "/portfolio/static/media/What_to_eat.7b3b0969d45b85d848ec.jpeg",
+    "static/media/footer_logo_fullname.png": "/portfolio/static/media/footer_logo_fullname.32aa6cf2f3012f121924.png",
+    "static/media/BenHines_Resume_Jul2022.pdf": "/portfolio/static/media/BenHines_Resume_Jul2022.a04b834c7d524f4022da.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.71d0b764.css.map": "/portfolio/static/css/main.71d0b764.css.map",
+    "main.72bf62b5.js.map": "/portfolio/static/js/main.72bf62b5.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71d0b764.css",
+    "static/js/main.72bf62b5.js"
+  ]
+}
