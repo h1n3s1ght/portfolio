@@ -69,3 +69,23 @@ export function NavbarTab(props) {
         </NavCont>
     );
 };
+
+//==============================================
+//====  Use to render Mobile Formatting  =======
+//==============================================
+
+const LinksMob = styled.div`
+    padding-right: 2%;
+    padding-top: 1%;
+    width: 100%;
+`;
+
+export function NavbarMob(props) {
+    return (
+        <NavCont>
+            <LinksMob>
+                {/* <NavLinksMob/> */}
+            </LinksMob>
+        </NavCont>
+    );
+};

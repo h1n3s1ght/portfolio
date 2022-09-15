@@ -115,7 +115,7 @@ const { imgUrl, title, description, link } = props;
 
 const CardContTab = styled.div`
     width: 80%;
-    min-height: 100vh;
+    min-height: 90vh;
     margin-left: 10%;
     margin-top: 3%;
     display: flex;

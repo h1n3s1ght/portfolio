@@ -4,12 +4,13 @@ import Marginer from "../../../components/marginer/index"
 import BackgroundImg from "../../../assets/images/background.gif";
 import { FullName } from "../../../components/logo/fullName";
 import { ContactBtn } from "../../../components/button/contact";
-import { DownArrow } from "../../../components/arrow/downArrow";
+import { DownArrow, DownArrowMob } from "../../../components/arrow/downArrow";
 import { Navbar, NavbarTab } from "../../../components/navbar";
-import { DownArrowCont, DownArrowContTab } from "../../../components/arrow/downArrowCont";
+import { DownArrowCont, DownArrowContMob, DownArrowContTab } from "../../../components/arrow/downArrowCont";
 import { Element, scroller } from "react-scroll";
 import { useState } from "react";
 import { ContactModal, ContactModalTab } from "../../../components/modal/contactModal";
+import { Hamburger } from "../../../components/navbar/hamburger";
 
 
 
@@ -127,16 +128,16 @@ const [openModal, setOpenModal] = useState(false);
 //==============================================
 
 const TopContainerMob = styled(Element)`
-    width: 100%;
-    min-height: 105vh;
+    width: 100vw;
+    min-height: 100vh;
     padding: 0;
     background-image: url(${BackgroundImg});
     background-size: cover;
 `;
 
 const BackgroundFilterMob = styled.div`
-    width: 100%;
-    min-height: 105vh;
+    width: 100vw;
+    min-height: 100vh;
     background-color: rgba(43,146,228,.15);
     display: flex;
     flex-direction: column;
@@ -156,21 +157,20 @@ const [openModal, setOpenModal] = useState(false);
 
     return (
     <Element name="home">
-        <TopContainer>
-            <BackgroundFilter>
-                <Navbar />
+        <TopContainerMob>
+            <BackgroundFilterMob>
                 <Marginer direction="vertical" margin="18em"/>
                 <FullName/>
-                <Marginer direction="vertical" margin="1.25em"/>
+                <Marginer direction="vertical" margin="1em"/>
                 <ContactBtn className="openModalBtn" onClick={() => {
                 setOpenModal(true);
             }}> Contact Me</ContactBtn>
-                <DownArrowCont onClick={scrollToNextPage}>
-                    <DownArrow/>
-                </DownArrowCont>
+                <DownArrowContMob onClick={scrollToNextPage}>
+                    <DownArrowMob/>
+                </DownArrowContMob>
                 { openModal && <contactModal closeModal={setOpenModal}/>}
-            </BackgroundFilter>
-        </TopContainer>
+            </BackgroundFilterMob>
+        </TopContainerMob>
     </Element>
     )
 };

@@ -19,58 +19,33 @@
 /* Style Entire App */
 /* ================ */
 
-/* body {
-  width: 100vw;
-  min-height: 70vh;
-  max-height: 100vh;
-  background-image: url('./images/background.gif');
-  background-image: url('./images/background2.gif');
-  background-position: center top absolute;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-} */
-
-/* .homePage {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-content: left;
-  text-align: left;
-  background-color: rgba(0,0,0,.8);
-}
-
-.homePageText {
-  width: 25%;
-}
-
-.homePageText h1, h3{
-  margin-left: 2%;
-  text-align: center;
-  font-weight: 300;
-}
-
-.homePageText h1{
-  margin-top: 1%;
-  font-size: 2.55em;
-  font-family: 'La Belle Aurore', cursive;
-}
-
-.homePageText h3{
-  margin-top: -5%;
-  color: white;
-} */
-
 .sticky-nav {
   position: sticky;
   top: 5%;
   height: 0;
-  /* background-color: rgba(6,22,40,.98) !important; */
 }
 
 .m-1:hover {
   color: rgba(255,255,255,.45) !important;
 }
 
-/* #formMess {
-  max-length: 600;
-} */
+.menuNav {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  list-style: none;
+  top: 0;
+  left: 0;
+  min-height: 5vh;
+  width: 100vw;
+  max-height: 75vw;
+  padding: 0;
+}
+
+.menuNav .showMenu {
+  min-height: 75vh;
+  z-index: 1400;
+}
+
+.menuNav li:first-child {
+  margin-top: 5vh;
+}

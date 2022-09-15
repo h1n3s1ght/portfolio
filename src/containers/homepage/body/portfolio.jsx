@@ -44,7 +44,6 @@ const StyDot = styled(DotGroup)`
   justify-content: center;
 
   button {
-    // z-index: 1000;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -118,11 +117,11 @@ export function PortfolioTab(props) {
 
       <StyCarProv
         naturalSlideWidth={100}
-        naturalSlideHeight={102}
+        naturalSlideHeight={95}
         totalSlides={3}
         visibleSlides={1}
       >
-        <Slider>
+        <Slider style={{padding: "0 0 15vh 0"}}>
           <StySli index={0}>
             <PortCardTab
               title="Snowball Debt Calculator"
@@ -143,7 +142,53 @@ export function PortfolioTab(props) {
             link='https://planit-t.herokuapp.com/'/>
           </StySli>
         </Slider>
-        <StyDot />
+        <StyDot/>
+      </StyCarProv>
+    </PortCont>
+  );
+}
+
+
+//==============================================
+//====  Use to render Mobile Formatting  =======
+//==============================================
+
+
+export function PortfolioMob(props) {
+  return (
+    <PortCont name="Portfolio">
+      <PageTitle>Portfolio</PageTitle>
+
+      <Marginer direction="vertical" margin=".5em" />
+
+      <StyCarProv
+        naturalSlideWidth={100}
+        naturalSlideHeight={95}
+        totalSlides={3}
+        visibleSlides={1}
+      >
+        <Slider style={{padding: "0 0 25vh 0"}}>
+          <StySli index={0}>
+            <PortCardTab
+              title="Snowball Debt Calculator"
+              imgUrl={SnowBall}
+              description='When looking at debt as a whole we here think it is best to have an easy tool to help you manage your payment plans. We use the "Snowball Method" here on our platform. What is the "Snowball Method"? The "snowball method," simply put, means paying off the smallest of all your loans as quickly as possible. Once that debt is paid, you take the money you were putting toward that payment and roll it onto the next-smallest debt owed. Ideally, this process would continue until all accounts are paid off. As you roll the money used from the smallest balance to the next on your list, the amount “snowballs” and gets larger and larger and the rate of the debt that is reduced is accelerated.'
+              link="https://snowball-debt-calc.herokuapp.com/"
+            />
+          </StySli>
+          <StySli index={1}>
+            <PortCardTab title="What To Eat" description=''
+            imgUrl={WhatToEat}
+            link="https://what-to-eat-api-site.herokuapp.com/recipes"
+            />
+          </StySli>
+          <StySli index={2}>
+            <PortCardTab title="Plan It Travel" description=''
+            imgUrl={PlanIt} 
+            link='https://planit-t.herokuapp.com/'/>
+          </StySli>
+        </Slider>
+        <StyDot/>
       </StyCarProv>
     </PortCont>
   );

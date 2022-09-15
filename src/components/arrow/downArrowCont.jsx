@@ -33,3 +33,19 @@ export const DownArrowContTab = styled.div`
     align-items: center;
     justify-content: center;
 `;
+
+//==============================================
+//====  Use to render Mobile Formatting  =======
+//==============================================
+
+export const DownArrowContMob = styled.div`
+    width: 20%;
+    height: 5%;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;

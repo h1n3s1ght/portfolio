@@ -1,11 +1,10 @@
 import React from "react";  
 import styled from "styled-components";
-import { MainBody, MainBodyTab } from "./body/mainBody";
+import { MainBody, MainBodyTab, MainBodyMob } from "./body/mainBody";
 import { TopSection, TopSectionTab, TopSectionMob } from "./header/topSection";
-import { Footer, FooterTab } from "./footer/footer";
+import { Footer, FooterTab, FooterMob } from "./footer/footer";
 import useMediaQuery from "../../components/MediaQuery/useMediaQuery";
-
-// import { useMediaQuery } from "react-responsive";
+import { Hamburger } from "../../components/navbar/hamburger";
 
 const PageContainer = styled.div`
     width: 100%;
@@ -14,27 +13,6 @@ const PageContainer = styled.div`
     flex-direction: column;
     font-family: 'League Spartan', sans-serif;
 `;
-
-
-// const Desktop = ({children}) => {
-//     const isComp = useMediaQuery({minWidth: 1400});
-//     return isComp ? children : null ;
-// }
-
-// const Tablet = ({children}) => {
-//     const isTab = useMediaQuery({minWidth: 820, maxWidth: 1399});
-//     return isTab ? children : null;
-// }
-
-// const Mobile = ({children}) => {
-// const isPhone = useMediaQuery({maxWidth: 350});
-
-// }
-
-// const Default = ({children}) => {
-// const isDefault = useMediaQuery({minWidth: 355});
-
-// }
 
 export function Homepage(props){
 
@@ -56,9 +34,10 @@ const Tablet = (
 
 const Mobile = (
     <PageContainer>
-        <TopSectionTab/>
-        <MainBodyTab/>
-        <FooterTab/>
+        <Hamburger/>
+        <TopSectionMob/>
+        <MainBodyMob/>
+        <FooterMob/>
     </PageContainer>
 )
 
